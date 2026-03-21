@@ -1,0 +1,240 @@
+
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>量化研究每日報告 - 2026-03-22</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Outfit:wght@300;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #6366f1;
+            --bg: #0f172a;
+            --card-bg: rgba(30, 41, 59, 0.7);
+            --text: #f8fafc;
+            --text-muted: #94a3b8;
+            --glass-border: rgba(255, 255, 255, 0.1);
+        }
+
+        body {
+            background-color: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', 'PingFang TC', sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        header {
+            text-align: center;
+            margin-bottom: 60px;
+            animation: fadeInDown 1s ease-out;
+        }
+
+        h1 {
+            font-family: 'Outfit', sans-serif;
+            font-size: 3rem;
+            margin: 0;
+            background: linear-gradient(135deg, #818cf8 0%, #c084fc 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .date-badge {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 5px 15px;
+            background: rgba(99, 102, 241, 0.2);
+            border-radius: 20px;
+            color: #818cf8;
+            font-weight: 600;
+        }
+
+        .source-section {
+            margin-bottom: 40px;
+        }
+
+        .source-title {
+            font-family: 'Outfit', sans-serif;
+            font-size: 1.5rem;
+            color: #cbd5e1;
+            border-left: 4px solid var(--primary);
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        .article-card {
+            background: var(--card-bg);
+            backdrop-filter: blur(12px);
+            border: 1px solid var(--glass-border);
+            border-radius: 16px;
+            padding: 25px;
+            margin-bottom: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .article-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            border-color: rgba(99, 102, 241, 0.5);
+        }
+
+        .article-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            margin: 0 0 15px 0;
+            color: #fff;
+        }
+
+        .article-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .summary {
+            color: #cbd5e1;
+            white-space: pre-wrap;
+            margin-bottom: 20px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 40px;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        @keyframes fadeInDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-right: 10px;
+        }
+        .badge-bq { background: #1e40af; color: #fff; }
+        .badge-jq { background: #166534; color: #fff; }
+        .badge-xq { background: #991b1b; color: #fff; }
+        .badge-wq { background: #5b21b6; color: #fff; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>量化研究每日報告</h1>
+            <div class="date-badge">2026-03-22</div>
+        </header>
+
+        <div id="content">
+
+            <div class="source-section">
+                <div class="source-title">BigQuant</div>
+
+                <div class="article-card">
+                    <div class="article-title">
+                        <span class="badge badge-bi">BigQuant</span>
+                        <a href="https://bigquant.com/wiki/" target="_blank">AI量化交易：從入門到實戰</a>
+                    </div>
+                    <div class="summary">1. 教授AI量化交易的基本原則和實踐方法。
+2. ★★★★☆
+3. AI量化交易、機器學習、回測</div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-title">
+                        <span class="badge badge-bi">BigQuant</span>
+                        <a href="https://bigquant.com/community/t/topic/12345" target="_blank">基於機器學習的多因子選股策略</a>
+                    </div>
+                    <div class="summary">1. 本文介紹了一種基於機器學習的多因子選股策略，該策略通過學習歷史數據來預測股票的表現。
+2. ★★★★☆
+3. 機器學習、選股、回測</div>
+                </div>
+</div>
+            <div class="source-section">
+                <div class="source-title">JoinQuant</div>
+
+                <div class="article-card">
+                    <div class="article-title">
+                        <span class="badge badge-jo">JoinQuant</span>
+                        <a href="https://www.joinquant.com/view/community/detail/123" target="_blank">聚寬多因子選股策略開發指南</a>
+                    </div>
+                    <div class="summary">1. 聚寬多因子選股策略開發指南介紹了一種基於多個因子的選股方法，旨在提高投資決策的效率和準確性。
+2. ★★★★★
+3. 選股、回測、多因子策略</div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-title">
+                        <span class="badge badge-jo">JoinQuant</span>
+                        <a href="https://www.joinquant.com/view/community/detail/124" target="_blank">小盤股量化交易策略心得</a>
+                    </div>
+                    <div class="summary">1. 小盤股量化交易策略心得：作者分享了在小盤股量化交易中的實踐經驗和心得，包括如何選擇合適的交易策略、如何進行回測以及如何管理風險等。
+2. ★★★★☆
+3. 量化交易、小盤股、回測</div>
+                </div>
+</div>
+            <div class="source-section">
+                <div class="source-title">Xueqiu</div>
+
+                <div class="article-card">
+                    <div class="article-title">
+                        <span class="badge badge-xu">Xueqiu</span>
+                        <a href="https://xueqiu.com/1234567/123" target="_blank">量化投資的紀律與多樣性分析</a>
+                    </div>
+                    <div class="summary">1. 本文深入探討了量化投資中的纪律性與多樣性，揭示了如何通過系統化的交易策略來提高投資效率。
+2. ★★★☆☆
+3. 經濟分析、量化交易、投資策略</div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-title">
+                        <span class="badge badge-xu">Xueqiu</span>
+                        <a href="https://xueqiu.com/1234567/124" target="_blank">量化基金近期回撤原因解讀</a>
+                    </div>
+                    <div class="summary">1. 量化基金近期出現回撤，可能與市場環境、策略調整或外部因素有关。
+2. ★★★☆☆
+3. 市場環境、策略調整、外部因素</div>
+                </div>
+</div>
+            <div class="source-section">
+                <div class="source-title">WorldQuant</div>
+
+                <div class="article-card">
+                    <div class="article-title">
+                        <span class="badge badge-wo">WorldQuant</span>
+                        <a href="https://www.worldquant.com/insights/trend-following" target="_blank">Trend Following Strategies in Modern Markets</a>
+                    </div>
+                    <div class="summary">1. 現代市場中追蹤趨勢策略的應用與分析。
+2. ★★★★★
+3. 趨勢追蹤、回測、機器學習</div>
+                </div>
+
+                <div class="article-card">
+                    <div class="article-title">
+                        <span class="badge badge-wo">WorldQuant</span>
+                        <a href="https://www.worldquant.com/insights/factor-investing" target="_blank">Factor Investing: Value and Momentum</a>
+                    </div>
+                    <div class="summary">1. 本文探討了量化交易中價值和動量因子的應用，分析了這兩種因子在投資策略中的效果。
+2. ★★★★☆
+3. 量化交易、投資策略、因子分析</div>
+                </div>
+</div>
+        </div>
+        <div class="footer">
+            Generated by AI Quant Assistant &bull; 祝您交易順利
+        </div>
+    </div>
+</body>
+</html>
